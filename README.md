@@ -6,7 +6,11 @@ self-hosted Azure OSINT tool
 
 We have been using this tool internally for the last few years. Decided to release it so you can all laugh at my poor code design and bad php ;)  
 
-It is very similar to what @DrAzureAD's OSINT tool does (https://aadinternals.com/osint/). While this version lacks a few of the extra features, it is self-contained, requires no account, and can be hosted anywhere.
+It is very similar to what @DrAzureAD's OSINT tool does (https://aadinternals.com/osint/). While this version lacks a few of the extra features, it is self-contained, requires no account, and can be hosted anywhere. It also comes with your choice of an AI background complete with misspelled words, or a custom-made cloudkicking roundhouse machine background.
+![default_background](https://github.com/user-attachments/assets/e0865d1d-1165-41c0-8631-322fe314d2b2)
+
+<img src="https://github.com/user-attachments/assets/e0865d1d-1165-41c0-8631-322fe314d2b2" width="500">
+<img src="https://github.com/user-attachments/assets/236c8088-2f94-4402-9d95-88017914e6e4" width="500">
 
 ### Azure checks
 - [x] Tenants lookup
