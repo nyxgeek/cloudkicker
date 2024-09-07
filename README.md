@@ -31,4 +31,4 @@ If you want to look up the tenant name, supply it as a ```.onmicrosoft.com``` ad
 
 > [!IMPORTANT]
 > Don't expose thise externally. By default, the page will check to see if it's protected by basic auth and if not, if it is reachable externally, it will not run. To allow access externally you must set the ```$disable_safety_checks``` variable to ```'True'``` in the php file.
-> To restrict access, I recommend configuring basic auth and HTTPS, or restricting by IP address.
+> To restrict access, I recommend configuring basic auth and HTTPS, or restricting by IP address. For information on configuring basic auth, see the [wiki](https://github.com/nyxgeek/cloudkicker/wiki)
