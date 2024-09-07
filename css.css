@@ -1,0 +1,22 @@
+table {
+        border-collapse:collapse;
+}
+
+tr {
+        border-bottom:1px solid #666;
+
+}
+
+td {
+        min-width:50px;
+        color:rgba(40,206,40,1);
+        padding-left:10px;
+}
+
+.tenantIdBox{
+        width:350px;
+}
+
+#searchtext{
+	width:200px;	
+}
