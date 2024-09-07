@@ -281,11 +281,18 @@ if (preg_match_all($teststring, $result, $matches)) {
     $setup_type = $infolookup->NameSpaceType == "Managed" ? "Managed (Standalone Online or AD Synced)" : $infolookup->NameSpaceType;
     echo "<tr><td>Azure Configuration</td><td>{$setup_type}</td></tr>";
 
+
     if ($setup_type == "Federated") {
-        echo "<tr><td>ADFS Endpoint</td><td>{$infolookup->AuthURL}</td></tr>";
+        $adfs_url = $infolookup->AuthURL;
+        if ( $adfs_url != "" ){
+            $adfs_endpoints[] = $adfs_url;
+            $adfsFound = True;
+            //echo "<tr><td>ADFS Endpoint</td><td>{$infolookup->AuthURL}</td></tr>";
+        }else{
+    $adfs_endpoints = check_adfs_endpoint($domain_list, $environment);
+       }
     }
 
-    $adfs_endpoints = check_adfs_endpoint($domain_list, $environment);
 
     echo "<tr><td>&nbsp;</td><td></td></tr>";
 
