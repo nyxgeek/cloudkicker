@@ -1,5 +1,5 @@
 # cloudkicker
-self-hosted OSINT tool
+self-hosted Azure OSINT tool
 
 
 ### overview
